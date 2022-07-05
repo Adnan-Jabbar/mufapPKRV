@@ -12,7 +12,7 @@
 	if (ENV === 1) {
 		define("HOST", "127.0.0.1");
 		define("USER", "user");
-		define("PASS", "password");
+		define("PASS", "^password");
 		define("PORT", "3306");
 		define("DB_NAME", "mufap");
 		define("CHAR_SET", "utf8mb4");
@@ -102,14 +102,14 @@
 
     // Initialize a file URL to the variable
     $datetime 		= date("Y-m-d H:i:s");
-	// $current_date 	= date("Y-m-d");
-	$current_date 	= "2022-06-30";
+	$current_date 	= date("Y-m-d");
+	// $current_date 	= "2022-06-30";
 	$str_date 		= strtotime($current_date);
 	$next_date 		= strtotime("+1 day", $str_date);
 	$next_date 		= date("Y-m-d", $next_date);
-	public $year 			= date("Y");
-	public $month 			= date("F");
-	public $today 			= date("dmY");
+	$year 			= date("Y");
+	$month 			= date("F");
+	$today 			= date("dmY");
 	// $year 			= "2022";
 	// $month 			= "June";
 	// $today 			= "30062022";
