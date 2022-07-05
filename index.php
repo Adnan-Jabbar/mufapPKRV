@@ -119,9 +119,6 @@
     $file_name 		= basename($url);
     define("FILE_NAME",  $file_name);
 
-	// define("PUT_FILE_DIR", "/var/www/html/mufapPKRV/CSV/");
-    // $put_file_dir = "/var/www/html/mufapPKRV/CSV/{$file_name}";
-
 	$weekend = Homeostasis::isWeekend($current_date);
 	// $result = SqlOperation::getLastData($conn, $weekend);
 
